@@ -37,6 +37,9 @@ const RandomIdentification = () => {
                         <p>Name: {person.name.first} {person.name.last}</p>
                         <p>Gender: {person.gender}</p>
                         <p>Email: {person.email}</p>
+                        <p>DOB: {person.dob.date} {" " + person.dob.age}</p>
+                        <p>Phone Number: {person.phone}</p>
+                        <p>Address: {person.location.city} {" " + person.location.state} {" " + person.location.country} {" " + person.location.postcode}</p>
                         <img src={person.picture.medium} alt="Person's picture" className='mx-auto block' /> {/* Example: Display the picture */}
                         {/* ... display other properties as needed ... */}
                     </div>
